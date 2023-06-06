@@ -43,12 +43,20 @@ body {
     }
 }
 
-// .navbar {
-//     padding: 40px 60px;
-//     font-size: 1.3rem;
-//     // font-weight: bold;
-//     background-color: $palette-white;
-// }
+// bootstrap's div for pill navbar 
+.nav {
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+// my div class around standard navbar
+.nav-div { 
+    font-size: 1.2rem;
+    background-color: var(--bs-primary);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 
 .font-awesome-icon {
     margin: 0 0 1.5rem 0;
