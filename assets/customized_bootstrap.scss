@@ -1,0 +1,12 @@
+$navbar-light-color: var(--bs-light);
+$navbar-light-hover-color: var(--bs-gray-500);
+$navbar-light-brand-color: var(--bs-light);
+$navbar-light-brand-hover-color: var(--bs-gray-500);
+
+$navbar-light-toggler-border-color: var(--bs-light);
+
+$navbar-toggler-border-radius: 5px;
+$navbar-toggler-focus-width: 1.5px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  text-align: cente;
 }
 
 .container-fluid {
@@ -8,12 +8,12 @@ body {
 
 .colored-section {
   background-color: var(--bs-primary);
-  color: var(--bs-gray-100);
+  color: var(--bs-light);
 }
 
 .white-section {
-  background-color: var(--bs-gray-100);
-  color: var(--bs-gray-900);
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
 }
 
 .hoverable-icon {
@@ -31,25 +31,13 @@ body {
   text-decoration: none;
 }
 
-.nav {
-  font-size: 1.3rem;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
-
-.nav-div {
-  font-size: 1.2rem;
+.my-nav-div {
+  font-size: 1.1rem;
   background-color: var(--bs-primary);
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-}
-
-.font-awesome-icon {
-  margin: 0 0 1.5rem 0;
 }
 
 .social-icon-text {
-  color: var(--bs-gray-100);
+  color: var(--bs-light);
   padding-top: 3%;
 }
 

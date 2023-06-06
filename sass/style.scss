@@ -1,17 +1,9 @@
-// Variables
-$palette-icon: #ef8172;
-$palette-icon: var(--bs-light);
-$palette-icon-text: #8f8f8f;
-$palette-icon-text: var(--bs-gray-100);
-$palette-main-background: #ff4c68;
-$palette-main-background: var(--bs-primary);
-$palette-white: #f8f9fa;
-$palette-white: var(--bs-gray-100);
-$palette-black: #212529;
-$palette-black: var(--bs-gray-900);
+$palette-main: var(--bs-primary);
+$palette-light: var(--bs-light);
+$palette-dark: var(--bs-dark);
 
 body {
-    text-align: center;
+    text-align: cente;
 }
 
 .container-fluid {
@@ -19,19 +11,19 @@ body {
 }
 
 .colored-section {
-    background-color: $palette-main-background;
-    color: $palette-white;
+    background-color: $palette-main;
+    color: $palette-light;
 }
 
 .white-section {
-    background-color: $palette-white;
-    color: $palette-black;
+    background-color: $palette-light;
+    color: $palette-dark;
 }
 
 .hoverable-icon {
-    color: $palette-icon;
+    color: $palette-light;
     &:hover {
-        color: $palette-main-background;
+        color: $palette-main;
     }
 }
 
@@ -43,27 +35,16 @@ body {
     }
 }
 
-// bootstrap's div for pill navbar 
-.nav {
-    font-size: 1.3rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
 // my div class around standard navbar
-.nav-div { 
-    font-size: 1.2rem;
-    background-color: var(--bs-primary);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-.font-awesome-icon {
-    margin: 0 0 1.5rem 0;
+.my-nav-div { 
+    font-size: 1.1rem;
+    background-color: $palette-main;
+    // font-family: 'Courier New', Courier, monospace;
+    // font-weight: bold;
 }
 
 .social-icon-text {
-    color: $palette-icon-text;
+    color: $palette-light;
     padding-top: 3%;
 }
 
