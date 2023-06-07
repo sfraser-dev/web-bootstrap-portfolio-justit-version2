@@ -7,7 +7,11 @@ body {
 }
 
 .container-fluid {
-    padding: 7% 7%;
+    padding: 6%;
+}
+
+.nav-container-fluid {
+    padding: 1% 6%;
 }
 
 .colored-section {
@@ -39,8 +43,6 @@ body {
 .my-nav-div { 
     font-size: 1.1rem;
     background-color: $palette-main;
-    // font-family: 'Courier New', Courier, monospace;
-    // font-weight: bold;
 }
 
 .social-icon-text {
@@ -68,6 +70,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .my-nav-div { 
+        font-size: 1.3rem;
+    }
 }
 
 @media only screen and (min-width: 880px) {
@@ -75,11 +80,17 @@ footer {
         width: 300px;
         height: 250px;
     }
+    .my-nav-div { 
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .hero-image {
         width: 350px;
         height: 290px;
+    }
+    .my-nav-div { 
+        font-size: 1.6rem;
     }
 }
