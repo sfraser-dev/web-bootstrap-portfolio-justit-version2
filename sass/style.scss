@@ -3,7 +3,7 @@ $palette-light: var(--bs-light);
 $palette-dark: var(--bs-dark);
 
 body {
-    text-align: cente;
+    text-align: center;
 }
 
 .container-fluid {
@@ -50,6 +50,23 @@ body {
     border: 2px solid $palette-light;
 }
 
+.badge-container {
+    margin-top: 30px;
+}
+
+@mixin badge-parent {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 4px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.my-badge {
+    @include badge-parent;
+    border-color:  $palette-light;
+}
+
 .social-icon-text {
     color: $palette-light;
     padding-top: 3%;
@@ -77,6 +94,10 @@ footer {
     }
     .my-nav-div { 
         font-size: 1.15rem;
+    }
+    
+    body {
+        text-align: left;
     }
 }
 
