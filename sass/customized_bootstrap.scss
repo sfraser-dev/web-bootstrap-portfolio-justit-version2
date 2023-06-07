@@ -1,3 +1,20 @@
+// imports needed to access variables, can over-ride "!defaults"
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// example of color variables that can be used
+// open the scss files imported above to see the variables
+// $primary: pink;
+// $secondary: green;
+// $info: #343434;
+// $navbar-light-color: var(--bs-light);
+// $navbar-light-color: var(--bs-primary);
+// $navbar-light-color: var(--bs-secondary);
+// $navbar-light-color: var(--bs-info);
+// $my-hex-val: yellow-300;
+// $my-hex-val: $gray-100;
+
 $navbar-light-color: var(--bs-light);
 $navbar-light-hover-color: var(--bs-gray-500);
 $navbar-light-brand-color: var(--bs-light);
@@ -7,8 +24,11 @@ $navbar-light-toggler-border-color: var(--bs-light);
 $navbar-toggler-border-radius: 3.5px;
 $navbar-toggler-focus-width: 1px;
 
-// $primary: pink;
-// $secondary: green;
+// change stroke hex value to change the color of the hamburger svg
+$my-hex-val: $gray-100;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$my-hex-val}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 

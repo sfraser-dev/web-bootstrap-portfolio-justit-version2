@@ -1,3 +1,7 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
 $palette-primary: var(--bs-primary);
 $palette-light: var(--bs-light);
 $palette-dark: var(--bs-dark);
@@ -14,12 +18,12 @@ body {
     padding: 1% 6%;
 }
 
-.colored-section {
+.stripe-colored {
     background-color: $palette-primary;
     color: $palette-light;
 }
 
-.white-section {
+.stripe-white {
     background-color: $palette-light;
     color: $palette-dark;
 }
@@ -50,21 +54,26 @@ body {
     border: 2px solid $palette-light;
 }
 
-.badge-container {
+.my-badge-container {
     margin-top: 30px;
 }
 
-@mixin badge-parent {
+@mixin my-badge {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 4px;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
 }
 
-.my-badge {
-    @include badge-parent;
+.my-badge-stripe-colored {
+    @include my-badge;
     border-color:  $palette-light;
+}
+
+.my-badge-stripe-white {
+    @include my-badge;
+    border-color:  $palette-dark;
 }
 
 .social-icon-text {

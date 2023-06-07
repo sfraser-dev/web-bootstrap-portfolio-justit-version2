@@ -6,6 +6,7 @@
 # me
 *.7z
 *.zip
+css/
 
 # Node artifact files
 node_modules/
