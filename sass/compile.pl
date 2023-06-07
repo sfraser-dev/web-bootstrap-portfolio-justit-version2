@@ -1,11 +1,31 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
+use feature qw(say);
 use File::Path qw(make_path);
+use File::Find; 
+use File::Basename;
+
+our @content;
+
+# target scss files
+sub file_wanted {
+    if ($File::Find::name =~ /\.scss$/){
+        push @content, $File::Find::name;
+    }
+    return;
+}
+
+# find all scss files
+find( \&file_wanted, '.'); 
+
+# compile each sass file to css (normal and minified)
 make_path("../css/");
-
-qx(sass ./style.scss:../css/style.css --no-source-map);
-qx(sass ./style.scss:../css/style.min.css --style compressed --no-source-map);
-
-qx(sass ./customized_bootstrap.scss:../css/customized_bootstrap.css --no-source-map);
-qx(sass ./customized_bootstrap.scss:../css/customized_bootstrap.min.css --style compressed --no-source-map);
+foreach my $file_name (@content) {
+    my ($name,$file_dir,$ext) = fileparse($file_name,'\..*');
+    my $input_name = $file_dir.$name.$ext;
+    my $output_name = "../css/".$name.".css";
+    qx(sass $input_name:$output_name --no-source-map);
+    $output_name = "../css/".$name.".min.css";
+    qx(sass $input_name:$output_name --no-source-map --style compressed);
+}
