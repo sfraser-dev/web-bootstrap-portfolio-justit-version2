@@ -1,0 +1,7 @@
+// manually downloaded "free for web" zip file from fontawesome
+// now don't need to use the "cdn" kit
+// important: must also copy the webfonts/ folder to project root directory
+@use "../fontawesome-free-6.4.0-web/scss/brands.scss";
+@use "../fontawesome-free-6.4.0-web/scss/regular.scss";
+@use "../fontawesome-free-6.4.0-web/scss/fontawesome.scss";
+@use "../fontawesome-free-6.4.0-web/scss/solid.scss";
