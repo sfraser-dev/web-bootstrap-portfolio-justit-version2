@@ -4,11 +4,13 @@
   "description": "Capstone portfolio for JustIT using Bootstrap 5. Version 2.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass ./sass:./css/ ",
+    "prefix": "postcss css/style.css --use autoprefixer --no-map -d css/prefixed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
     "bootstrap": "^5.3.0"
   }
