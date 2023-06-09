@@ -1,17 +1,25 @@
 {
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.63.2"
+  },
   "name": "portfolio-justit-version2",
-  "version": "1.0.0",
   "description": "Capstone portfolio for JustIT using Bootstrap 5. Version 2.",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass:./css/ ",
-    "prefix": "postcss css/style.css --use autoprefixer --no-map -d css/prefixed"
+    "compile:sass": "sass ./sass:./css/ --no-source-map",
+    "compile:sassmin": "sass ./sass:./css/min/ --no-source-map --style compressed",
+    "compile:prefix": "postcss ./css/*.css --use autoprefixer --no-map -d ./css/prefixed/",
+    "compile:prefixmin": "postcss ./css/min/*.css --use autoprefixer --no-map -d ./css/prefixedmin/",
+    "build:all": "run-s compile:sass compile:sassmin compile:prefix compile:prefixmin"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "browserslist": "last 4 versions",
-  "dependencies": {
-    "bootstrap": "^5.3.0"
-  }
+  "license": "ISC"
 }
