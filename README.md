@@ -1,3 +1,3 @@
 Capstone portfolio for JustIT using Bootstrap 5. Version 2.
 
-npm i bootstrap@5.3.0
+bootstrap-create-customization-node-app/install-and-setup.pl
